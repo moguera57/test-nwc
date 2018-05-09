@@ -21,7 +21,7 @@ render(){
 					<div style={{backgroundImage: `url(${VenueAPI.homepage[0].imgbackground})`,}} className="full-bg"/>
 			}
 
-			<h3 className='exploreBtn'><Link to='/targetedindustries'>Explore Orlando</Link></h3>
+			<h3 className='exploreBtn'><Link to='/targetedindustries'}>Explore Orlando</Link></h3>
 		</div>
 		)
 	}
