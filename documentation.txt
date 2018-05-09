@@ -1,0 +1,49 @@
+———————————————————————————
+|| EDV.NWC DOCUMENTATION ||
+———————————————————————————
+
+###########################
+
+—————————————————————————————————————
+|| 1) Dependencies and Whats In It ||
+—————————————————————————————————————
+
+You should definitely install npm and yarn on your computer - it makes compiling this and managing dependencies way easier.
+
+https://www.npmjs.com/get-npm
+https://www.npmjs.com/package/yarn
+
+After installing npm you can install yarn by running
+
+$ npm install --save yarn-install 
+
+in your terminal
+
+“$ yarn start” starts the development test site, “$ yarn build” funnels the used dependencies and assets into a production file.
+
+Yarn build also links to Facebook’s own own tutorial/faq for React/Node deployment, which can be found here - http://bit.ly/2vY88Kr
+
+The project is built assuming it is run from the server root, this can be changed by changing the “homepage” field to whatever the new root is in package.json.
+
+Dependencies are:
+
+React - https://reactjs.org/
+React-Router - https://www.npmjs.com/package/react-router
+React-Router-Hash-Link - https://www.npmjs.com/package/react-router-hash-scroll
+Smoothscroll-Polyfill - https://www.npmjs.com/package/smoothscroll-polyfill
+
+These packages are built into the app so you don’t need to worry about the CDNs deprecating or updates to the packages changing how the app functions. React-Router and React-Router-Hash-Link are necessary to the functionality of the app as its what manages the dynamic loading and page changes. Smoothscroll Polyfill gives the page scroll transition support across all browsers.
+
+You do not have to download anything or do anything other than run yarn build to support these dependencies.
+
+—————————————————————————————
+|| 2) Updating Information ||
+—————————————————————————————
+
+All of the content on the main page is managed by api.js, where all the information is stored in an object with the methods that retrieve said information. There is documentation within the api itself.
+
+In general, the copy and images contained within the web app should only be manipulated through api.js.
+
+After updating the api, you’ll have to re-build the application with yarn build and push the new, repacked build file to version control. You can test the changes by running yarn start on the unpacked application.
+
+Alternatively, put the entire thing on version control, and build it on version control using console commands.
