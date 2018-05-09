@@ -2,7 +2,7 @@
   "name": "edvreactv2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://moguera57.github.io/test-nwc",
+  "homepage": "https://moguera57.github.io/test-nwc/",
   "dependencies": {
     "animated": "^0.2.2",
     "react": "^16.2.0",
