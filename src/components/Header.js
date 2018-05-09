@@ -11,16 +11,16 @@ export class Header extends Component{
       <header>
         <nav>
           <ul className="navigation">
-            <li className="logo"><Link to='/'><h2>ORLANDO</h2></Link></li>
-            <li><Link to='/targetedindustries'>Targeted Industries</Link></li>
-            <li><Link to='/incentives'>Incentives and Programs</Link></li>
-            <li><Link to='/qualityoflife'>Quality of Life</Link></li>
-            <li><Link to='/projects'>Hot Projects</Link></li>
-            <li><Link to='/sustainability'>Sustainability</Link></li>
-            <li><Link to='/workforce'>Workforce</Link></li>
-            <li><Link to='/education'>Education</Link></li>
-            <li><Link to='/infrastructure'>Infrastructure</Link></li>
-            <li><Link to='/partneragencies'>Partner Agencies</Link></li>
+            <li className="logo"><Link to={`${process.env.PUBLIC_URL}/`}><h2>ORLANDO</h2></Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/targetedindustries`}>Targeted Industries</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/incentives`}>Incentives and Programs</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/qualityoflife`}>Quality of Life</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/projects`}>Hot Projects</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/sustainability`}>Sustainability</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/workforce`}>Workforce</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/education`}>Education</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/infrastructure`}>Infrastructure</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/partneragencies`}>Partner Agencies</Link></li>
           </ul>
 
           <div id="mobile-button" onClick={this.menuToggle}>
@@ -35,16 +35,15 @@ export class Header extends Component{
 
           <div className="mobile-menu">
             <ul>
-              <li><Link to='/targetedindustries' onClick={this.menuToggle}>Targeted Industries</Link></li>
-              <li><Link to='/incentives' onClick={this.menuToggle}>Incentives and Programs</Link></li>
-              <li><Link to='/qualityoflife' onClick={this.menuToggle}>Quality of Life</Link></li>
-              <li><Link to='/projects' onClick={this.menuToggle}>Hot Projects</Link></li>
-              <li><Link to='/sustainability' onClick={this.menuToggle}>Sustainability</Link></li>
-              <li><Link to='/workforce' onClick={this.menuToggle}>Workforce</Link></li>
-              <li><Link to='/education' onClick={this.menuToggle}>Education</Link></li>
-              <li><Link to='/infrastructure' onClick={this.menuToggle}>Infrastructure</Link></li>
-              <li><Link to='/partneragencies' onClick={this.menuToggle}>Partner Agencies</Link></li>
-            </ul>
+            <li><Link to={`${process.env.PUBLIC_URL}/targetedindustries`}>Targeted Industries</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/incentives`}>Incentives and Programs</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/qualityoflife`}>Quality of Life</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/projects`}>Hot Projects</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/sustainability`}>Sustainability</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/workforce`}>Workforce</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/education`}>Education</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/infrastructure`}>Infrastructure</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/partneragencies`}>Partner Agencies</Link></li>            </ul>
           </div>
         </nav>
         
