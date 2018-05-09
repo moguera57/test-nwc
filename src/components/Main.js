@@ -18,16 +18,16 @@ import notfound from './pages/404'
 const Main = () => (
   <main>
     <Switch>
-      <Route exact path='/' component={Home}/>
-      <Route path='/targetedindustries' component={TargetedIndustries}/>
-      <Route path='/incentives' component={Incentives}/>
-      <Route path='/qualityoflife' component={Quality}/>
-      <Route path='/projects' component={Projects}/>
-      <Route path='/sustainability' component={Sustainability}/>
-      <Route path='/workforce' component={Workforce}/>
-      <Route path='/education' component={Education}/>
-      <Route path='/infrastructure' component={Infrastructure}/>
-      <Route path='/partneragencies' component={PartnerAgencies}/>
+      <Route exact path={process.env.PUBLIC_URL + '/'} component={Home}/>
+      <Route path={process.env.PUBLIC_URL + '/targetedindustries'} component={TargetedIndustries}/>
+      <Route path={process.env.PUBLIC_URL + '/incentives'} component={Incentives}/>
+      <Route path={process.env.PUBLIC_URL + '/qualityoflife'} component={Quality}/>
+      <Route path={process.env.PUBLIC_URL + '/projects'} component={Projects}/>
+      <Route path={process.env.PUBLIC_URL + '/sustainability'} component={Sustainability}/>
+      <Route path={process.env.PUBLIC_URL + '/workforce'} component={Workforce}/>
+      <Route path={process.env.PUBLIC_URL + '/education'} component={Education}/>
+      <Route path={process.env.PUBLIC_URL + '/infrastructure'} component={Infrastructure}/>
+      <Route path={process.env.PUBLIC_URL + '/partneragencies'} component={PartnerAgencies}/>
       <Route component={notfound} />
     </Switch>
   </main>
