@@ -12,15 +12,15 @@ export class Header extends Component{
         <nav>
           <ul className="navigation">
             <li className="logo"><Link to={`/${process.env.PUBLIC_URL}/`}><h2>ORLANDO</h2></Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/targetedindustries`}>Targeted Industries</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/incentives`}>Incentives and Programs</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/qualityoflife`}>Quality of Life</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/projects`}>Hot Projects</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/sustainability`}>Sustainability</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/workforce`}>Workforce</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/education`}>Education</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/infrastructure`}>Infrastructure</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/partneragencies`}>Partner Agencies</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/targetedindustries`}>Targeted Industries</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/incentives`}>Incentives and Programs</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/qualityoflife`}>Quality of Life</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/projects`}>Hot Projects</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/sustainability`}>Sustainability</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/workforce`}>Workforce</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/education`}>Education</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/infrastructure`}>Infrastructure</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/partneragencies`}>Partner Agencies</Link></li>
           </ul>
 
           <div id="mobile-button" onClick={this.menuToggle}>
@@ -35,15 +35,15 @@ export class Header extends Component{
 
           <div className="mobile-menu">
             <ul>
-            <li><Link to={`/${process.env.PUBLIC_URL}/targetedindustries`}>Targeted Industries</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/incentives`}>Incentives and Programs</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/qualityoflife`}>Quality of Life</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/projects`}>Hot Projects</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/sustainability`}>Sustainability</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/workforce`}>Workforce</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/education`}>Education</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/infrastructure`}>Infrastructure</Link></li>
-            <li><Link to={`/${process.env.PUBLIC_URL}/partneragencies`}>Partner Agencies</Link></li>            
+            <li><Link to={`${process.env.PUBLIC_URL}/targetedindustries`}>Targeted Industries</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/incentives`}>Incentives and Programs</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/qualityoflife`}>Quality of Life</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/projects`}>Hot Projects</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/sustainability`}>Sustainability</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/workforce`}>Workforce</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/education`}>Education</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/infrastructure`}>Infrastructure</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/partneragencies`}>Partner Agencies</Link></li>            
             </ul>
           </div>
         </nav>
