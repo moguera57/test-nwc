@@ -31,7 +31,7 @@ export class Header extends Component{
             </span>
           </div>
 
-          <h2 className="mobile-header"><Link to='/'>ORLANDO</Link></h2>
+          <h2 className="mobile-header"><Link to={`${process.env.PUBLIC_URL}/`}>ORLANDO</Link></h2>
 
           <div className="mobile-menu">
             <ul>
@@ -43,7 +43,8 @@ export class Header extends Component{
             <li><Link to={`${process.env.PUBLIC_URL}/workforce`} onClick={this.menuToggle}>Workforce</Link></li>
             <li><Link to={`${process.env.PUBLIC_URL}/education`} onClick={this.menuToggle}>Education</Link></li>
             <li><Link to={`${process.env.PUBLIC_URL}/infrastructure`} onClick={this.menuToggle}>Infrastructure</Link></li>
-            <li><Link to={`${process.env.PUBLIC_URL}/partneragencies`} onClick={this.menuToggle}>Partner Agencies</Link></li>            </ul>
+            <li><Link to={`${process.env.PUBLIC_URL}/partneragencies`} onClick={this.menuToggle}>Partner Agencies</Link></li>            
+            </ul>
           </div>
         </nav>
         
