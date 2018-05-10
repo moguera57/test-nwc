@@ -11,7 +11,7 @@ export class Header extends Component{
       <header>
         <nav>
           <ul className="navigation">
-            <li className="logo"><Link to={`/${process.env.PUBLIC_URL}/`}><h2>ORLANDO</h2></Link></li>
+            <li className="logo"><Link to={`${process.env.PUBLIC_URL}/`}><h2>ORLANDO</h2></Link></li>
             <li><Link to={`${process.env.PUBLIC_URL}/targetedindustries`}>Targeted Industries</Link></li>
             <li><Link to={`${process.env.PUBLIC_URL}/incentives`}>Incentives and Programs</Link></li>
             <li><Link to={`${process.env.PUBLIC_URL}/qualityoflife`}>Quality of Life</Link></li>
@@ -31,20 +31,19 @@ export class Header extends Component{
             </span>
           </div>
 
-          <h2 className="mobile-header"><Link to={`/${process.env.PUBLIC_URL}/`}>ORLANDO</Link></h2>
+          <h2 className="mobile-header"><Link to='/'>ORLANDO</Link></h2>
 
           <div className="mobile-menu">
             <ul>
-            <li><Link to={`${process.env.PUBLIC_URL}/targetedindustries`}>Targeted Industries</Link></li>
-            <li><Link to={`${process.env.PUBLIC_URL}/incentives`}>Incentives and Programs</Link></li>
-            <li><Link to={`${process.env.PUBLIC_URL}/qualityoflife`}>Quality of Life</Link></li>
-            <li><Link to={`${process.env.PUBLIC_URL}/projects`}>Hot Projects</Link></li>
-            <li><Link to={`${process.env.PUBLIC_URL}/sustainability`}>Sustainability</Link></li>
-            <li><Link to={`${process.env.PUBLIC_URL}/workforce`}>Workforce</Link></li>
-            <li><Link to={`${process.env.PUBLIC_URL}/education`}>Education</Link></li>
-            <li><Link to={`${process.env.PUBLIC_URL}/infrastructure`}>Infrastructure</Link></li>
-            <li><Link to={`${process.env.PUBLIC_URL}/partneragencies`}>Partner Agencies</Link></li>            
-            </ul>
+            <li><Link to={`${process.env.PUBLIC_URL}/targetedindustries`} onClick={this.menuToggle}>Targeted Industries</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/incentives`} onClick={this.menuToggle}>Incentives and Programs</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/qualityoflife`} onClick={this.menuToggle}>Quality of Life</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/projects`} onClick={this.menuToggle}>Hot Projects</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/sustainability`} onClick={this.menuToggle}>Sustainability</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/workforce`} onClick={this.menuToggle}>Workforce</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/education`} onClick={this.menuToggle}>Education</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/infrastructure`} onClick={this.menuToggle}>Infrastructure</Link></li>
+            <li><Link to={`${process.env.PUBLIC_URL}/partneragencies`} onClick={this.menuToggle}>Partner Agencies</Link></li>            </ul>
           </div>
         </nav>
         
